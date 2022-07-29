@@ -1,0 +1,21 @@
+<html>
+<head>
+<script language="javascript">
+	var no_of_tickets,total_cost;
+	const ticket_cost=150;
+	no_of_tickets=parseInt(window.prompt("Enter No.of tickets","0"));
+	total_cost=ticket_cost*no_of_tickets;
+	discount=total_cost*0.1;
+	amount=total_cost-discount;
+	document.write("<h2 style='color:blue;'>TotalCost:");
+	document.write(total_cost);
+	document.write("</h2>");
+	document.write("<h2 style='color:green;'>Discount:");
+	document.write(discount);
+	document.write("</h2>");
+	document.write("<h2 style='color:red;'>Amount to be paid:");
+	document.write(amount);
+	document.write("</h2>");
+</script>
+</head>
+</html>
