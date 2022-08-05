@@ -1,0 +1,27 @@
+<html>
+<head>
+<script language="javascript">
+arr=new Array();
+n=parseInt(window.prompt("Enter no.of elements","1"));
+for(i=0;i<n;i++){
+arr[i]=parseInt(window.prompt("Enter element:"+i));
+}
+arr.sort();
+document.write("After sorting:");
+for(i=0;i<arr.length;i++){
+	document.write("<p style='color:pink'>"+arr[i]+" ,"+"</p>");
+}
+n=parseInt(window.prompt("Enter Element to push:"));
+arr.push(n);
+document.write("After Push():");
+for(i=0;i<arr.length;i++){
+	document.write("<p style='color:pink'>"+arr[i]+" ,"+"</p>");
+}
+arr.pop();
+document.write("After Pop():");
+for(i=0;i<arr.length;i++){
+	document.write("<p style='color:pink'>"+arr[i]+" ,"+"</p>");
+}
+</script>
+</head>
+</html>
