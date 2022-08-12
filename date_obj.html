@@ -1,0 +1,23 @@
+<html>
+<head>
+<script language='javascript'>
+const d = new Date();
+days=['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+document.write("<h2>");
+document.write("<font color='yellow'>");
+document.write (d);
+var day=d.getDay();
+document.write("<br>");
+document.write("<font color='red'>");
+document.write(days[day]);
+document.write("<font color='green'>");
+mon=['January','February','March','April','May','June','July','August','September','October','November','December'];
+document.write("<br>"+mon[d.getMonth()]);
+document.write("<font color='blue'>");
+document.write("<br>"+d.getDate()+"-"+mon[d.getMonth()]+"-"+d.getFullYear());
+document.write("<font color='pink'>");
+document.write("<br>"+d.getHours()+":"+d.getMinutes()+":"+d.getSeconds());
+document.write("</h2>");
+</script>
+</head>
+</html>
