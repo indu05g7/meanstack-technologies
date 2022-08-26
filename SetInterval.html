@@ -1,0 +1,13 @@
+html>
+<body>
+<h2 id="demo"></h2>
+<script>
+function f3(x){
+	var d=new Date();
+	document.write("Parameter Value:"+x+"<br>");
+	document.getElementById("demo").innerHTML=d.getHours()+":"+d.getMinutes()+":"+d.getSeconds();
+}
+setInterval(f3(7),1000);
+</script>
+</body>
+</html>

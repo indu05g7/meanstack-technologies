@@ -1,0 +1,16 @@
+<html>
+<body>
+<script>
+function add(x,y,callback){
+	document.write("<h2>");
+	document.write("Hi"+"<br>");
+	callback();
+}
+function f3(){
+	var d=new Date();
+	document.write(d.getHours()+":"+d.getMinutes()+":"+d.getSeconds());
+}
+add(9,7,f3);
+</script>
+</body>
+</html>
